@@ -9,10 +9,6 @@ public class Sheets {
         return (labs*50)*students;
     }
     public int totalPackets(){
-       if(totalSheets()%500==0){
-           return totalPackets()/500;
-       }else{
-           return (totalSheets()/500)+1;
-       }
+       return (totalSheets()+499)/500;
     }
 }
