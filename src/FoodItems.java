@@ -1,7 +1,6 @@
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
 import java.util.Scanner;
 
 public class FoodItems {
@@ -205,6 +204,7 @@ public class FoodItems {
         System.out.println("CUSTOMER ID. : "+cust_id);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd  HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
+        now.format(dtf);
         System.out.println("DATE : "+now);
         System.out.println("____________________________________________________");
         System.out.println("NO.\t\tFOOD\t\tQUANTITY\t\tPRICE");
@@ -213,7 +213,8 @@ public class FoodItems {
         System.out.println();
         System.out.println("TOTAL\t\t:"+"Rs."+total);
         System.out.println("____________________________________________________");
-        System.out.println("Thankyou Visit again");
+        System.out.println("Thank you Visit again");
         System.out.println("____________________________________________________________");
     }
+
 }
